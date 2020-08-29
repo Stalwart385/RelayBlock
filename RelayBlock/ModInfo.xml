@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<ModInfo>
+		<Name value="RelayBlock" />
+		<Description value="Add relay as block" />
+		<Author value="Stalwart385" />
+		<Version value="1" />
+	</ModInfo>
+</xml>

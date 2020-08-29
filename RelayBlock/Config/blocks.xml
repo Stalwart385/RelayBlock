@@ -1,0 +1,42 @@
+<configs>
+
+	<append xpath="/blocks">
+
+		<block name="RelayBlock">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="Powered"/>
+			<!--MOD-->
+			<property name="UnlockedBy" value="perkAdvancedEngineering,generatorbankSchematic"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Material" value="Mconcrete"/>
+			<property name="CustomIcon" value="pouredConcreteBlock"/>
+			<property name="MaxDamage" value="1500"/>
+			<property name="Texture" value="176"/>
+			<!--MOD-->
+			<!--ORIGINAL
+			<property name="UnlockedBy" value="perkAdvancedEngineering,generatorbankSchematic"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Entities/Electrical/relayPrefab"/> <property name="HandleFace" value="Bottom"/>
+			-->
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="DisplayType" value="blockElectrical"/>
+			<property name="RequiredPower" value="1"/>
+			<property name="Group" value="Science"/>
+			<property class="RepairItems"> <property name="resourceForgedIron" value="1"/></property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1" prob="0.2" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,5"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="EconomicValue" value="28"/>
+			<property name="FilterTags" value="fdecor,felectrical"/>
+			<property name="SortOrder1" value="70a0"/>
+		</block>
+
+	</append>
+	
+</configs>

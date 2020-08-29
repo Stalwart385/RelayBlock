@@ -1,0 +1,4 @@
+<configs>
+	<append xpath="//passive_effect[@name='RecipeTagUnlocked'][contains(@tags,'electricwirerelay')]/@tags">,RelayBlock</append>
+</configs>
+

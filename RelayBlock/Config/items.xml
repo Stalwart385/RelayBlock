@@ -1,0 +1,5 @@
+<Config>
+	<insertAfter xpath="//triggered_effect[@action='ModifyCVar'][@cvar='electricwirerelay'][@operation='set'][@value='1']">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="RelayBlock" operation="set" value="1"/>
+	</insertAfter>
+</Config>
